@@ -4,7 +4,7 @@ const genTeam = team => {
     const genManager = manager => {
         return `
         <div class="card members">
-            <div class="card-header">
+            <div class="card-header bg-info">
         <h2 class="card-title text-center">${manager.getName()}</h2>
         <h3 class="card-title text-center"><i class="fab fa-blogger-b mr-1">${manager.getRole()}</i></h3>
         </div>
@@ -22,7 +22,7 @@ const genTeam = team => {
     const genEngineer = engineer => {
         return `
         <div class="card members">
-            <div class="card-header">
+            <div class="card-header bg-info">
         <h2 class="card-title text-center">${engineer.getName()}</h2>
         <h3 class="card-title text-center"><i class="fas fa-brain mr-1">${engineer.getRole()}</i></h3>
         </div>
@@ -40,7 +40,7 @@ const genTeam = team => {
     const genIntern = intern => {
         return `
         <div class="card members">
-            <div class="card-header">
+            <div class="card-header bg-info">
         <h2 class="card-title text-center">${intern.getName()}</h2>
         <h3 class="card-title text-center"><i class="fas fa-book-open mr-1">${intern.getRole()}</i></h3>
         </div>
@@ -77,23 +77,22 @@ module.exports = team => {
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Team Profile</title>
+    <title>Team</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/9d8d5f7eb7.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <div class="container-fluid">
         <div class="row">
-            <div class="col-12 jumbotron mb-3 fs-1 bg-warning">
-                <h1 class="text-center">Our Team</h1>
+            <div class="col-12 jumbotron mb-3 fs-1 bg-primary">
+                <h1 class="text-center">Team Page</h1>
             </div>
         </div>
     </div>
     <div class="container">
         <div class="row">
-            <div class="teams col-12 d-flex justify-content-center">
+            <div class="teams col-12 d-flex justify-content-evenly">
                 ${genTeam
             (team)}
             </div>
