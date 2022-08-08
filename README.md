@@ -8,7 +8,6 @@ The point of this application is to easily generate an office team based on user
 * [Installation](#installation)
 * [Contribution](#contribution)
 * [Video Demo](#video-demo)
-* [Questions](#questions)
 
 ## Installation 
 To install this application you must first clone the repo to your local machine. Once the repo is cloned to your machine, you must then install the dependencies jest and inquirer in your root directy after an NPM install. Once jest and inquirer are installed you can use 'npm run test' to run tests or 'node index' to begin the command line prompt that will walk you through creating your team.
