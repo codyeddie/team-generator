@@ -6,8 +6,7 @@ The point of this application is to easily generate an office team based on user
 ## Table of Contents
 
 * [Installation](#installation)
-* [Usage](#usage)
-* [Contributing](#contributing)
+* [Contribution](#contribution)
 * [Video Demo](#video-demo)
 * [Questions](#questions)
 
